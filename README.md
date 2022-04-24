@@ -1,7 +1,9 @@
 # Safeguardauth Basic API Wrapper
 
-Include `safeguard.py` in your directory, and import it
+Safeguard.py can be imported into any directory
+ && you'll have access to these safeguard functions
 _______________________________________________________
+Include `safeguard.py` in your directory, and import it
 ```
 import safeguard as sg
 ```
