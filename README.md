@@ -22,15 +22,15 @@ account = sg.Safeguard(Username="Username",
 Once you've entered your information you're ready to use the rest of the commands
 A detailed example can be found in `main.py`
 ```
-account.GenerateTokens(level=1, days=30)
-account.HWIDReset(username="Username)
+account.GenerateTokens(level=1, days=30) # Generate Register Token
+account.HWIDReset(username="Username) # Reset HWID
 
 account.UpdatePlan(option="expiration", username="Username", data=30) # Add 30 days to expiration
 account.UpdatePlan(option="ban", username="Username") # Ban User
 account.UpdatePlan(option="unban", username="Username") # Unban User
 account.UpdatePlan(option="level", username="Username", data=1) # Set User to Level 1
 
-users_response = account.TokenCreator(username="Username") 
+account.TokenCreator(username="Username") # Return users info & token creator
 
-log_response = account.FailLogs(username="Username") # Fetch the 5 Most Recent Fail Logs
+account.FailLogs(username="Username") # Fetch the 5 Most Recent Fail Logs
 ```
