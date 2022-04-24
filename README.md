@@ -1,14 +1,15 @@
 # Safeguardauth Basic API Wrapper
 
-Include `safeguard.py` in Your Directory, and Import it
+Include `safeguard.py` in your directory, and import it
+
 ```
 import safeguard as sg
 ```
 
-We can Then Setup the Safeguard Class, but Before we Need our Encrypted Password
+We can then setup the safeguard class, before we do we'll need to get our Encrypted Password
 
-Login to the site `https://safeguardauth.us/`, then goto the `Application Tab`, click the `Session Storage` drop down
-You will see a dict, the `'Password': 'xxxxxxxxxxxx'` is the password we need for below
+Login to the site `https://safeguardauth.us/`, open inspect element; Goto the `Application Tab`; Click the `Session Storage` drop down.
+You will see some json, the `'Password': 'xxxxxxxxxxxx'` is the password we need for below
 
 ```
 account = sg.Safeguard(Username="Username", 
