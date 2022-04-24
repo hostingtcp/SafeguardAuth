@@ -1,16 +1,14 @@
 # Safeguardauth Basic API Wrapper
 
 Include `safeguard.py` in your directory, and import it
-
+_______________________________________________________
 ```
 import safeguard as sg
 ```
-
 We can then setup the safeguard class, before we do we'll need to get our Encrypted Password
 
 Login to the site `https://safeguardauth.us/`, open inspect element; Goto the `Application Tab`; Click the `Session Storage` drop down.
 You will see some json, the `'Password': 'xxxxxxxxxxxx'` is the password we need for below
-
 ```
 account = sg.Safeguard(Username="Username", 
                     Password="Encrypted Password", # Password from above
@@ -19,10 +17,8 @@ account = sg.Safeguard(Username="Username",
                     ProgramName="2500RequestSafeguardPlan")
 
 ```
-
 Once you've entered your information you're ready to use the rest of the commands
-A detailed example can be found in `main.py` - once released
-
+A detailed example can be found in `main.py`
 ```
 account.GenerateTokens(level=1, days=30)
 account.HWIDReset(username="Username)
