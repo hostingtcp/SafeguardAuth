@@ -1,5 +1,5 @@
 # (Version) v1.0
-# (Author) Randle/pydev3/tcpdev
+# (Author) Randle/tcpdev
 # (Description) Entry Level SafeGuardAuth API Wrapper
 
 import datetime
