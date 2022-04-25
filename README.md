@@ -15,8 +15,7 @@ You will see some json, the `'Password': 'xxxxxxxxxxxx'` is the password we need
 account = sg.Safeguard(Username="Username", 
                     Password="Encrypted Password", # Password from above
                     ProgramID="xxxx-xxxx-xxxx-xxxx-xxxx", 
-                    DownloadLink="https://downloadlink.com/", 
-                    ProgramName="2500RequestSafeguardPlan")```
+                    ProgramName="2500RequestSafeguardPlan")
                     
 ```
 Once you've entered your information you're ready to use the rest of the commands
