@@ -16,8 +16,8 @@ account = sg.Safeguard(Username="Username",
                     Password="Encrypted Password", # Password from above
                     ProgramID="xxxx-xxxx-xxxx-xxxx-xxxx", 
                     ProgramName="2500RequestSafeguardPlan")
-                    
 ```
+                    
 Once you've entered your information you're ready to use the rest of the commands
 A detailed example can be found in `main.py`
 ```
