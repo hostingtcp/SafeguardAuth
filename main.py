@@ -8,7 +8,6 @@ import safeguard as sg
 account = sg.Safeguard(Username="Username", 
                     Password="Encrypted Password",
                     ProgramID="xxxx-xxxx-xxxx-xxxx-xxxx", 
-                    DownloadLink="https://downloadlink.com/", 
                     ProgramName="Program Name")
 
 ''' Generate a Level 1, 30 day token '''
