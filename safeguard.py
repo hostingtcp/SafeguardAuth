@@ -11,12 +11,11 @@ import requests
 
 
 class Safeguard:
-    def __init__(self, Username, Password, ProgramID, DownloadLink, ProgramName) -> None:
+    def __init__(self, Username, Password, ProgramID, ProgramName) -> None:
         ''' Gather Required SafeGuard Data'''
         self.Username: str = Username # Regular SafeGuard Username
         self.Password: str = Password # This Your Encrypted Safeguard Password, Read README.md
         self.ProgramID: hex = uuid.UUID(ProgramID).hex # SafeGuards' ProgramID is GUID
-        self.DownloadLink: str = DownloadLink # Link Returned With the Token
         self.ProgramName: str = ProgramName # SafeGuard Program Name
         
         self.s = requests.session()
@@ -47,7 +46,7 @@ class Safeguard:
             token_information = token_generate_req.json()
             
             return str(token_information['Token1'])
-            #return f"Register Token: {token_information['Token1']}\nDownload Link: {self.DownloadLink}"
+            #return f"Register Token: {token_information['Token1']}\nDownload Link: {self.DownloadLink()}"
         else: return f"Unable to generate token, please check you've set your login information correctly."
             
     def HWIDReset(self, username: str) -> str:
