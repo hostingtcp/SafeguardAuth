@@ -22,7 +22,7 @@ Once you've entered your information you're ready to use the rest of the command
 A detailed example can be found in `main.py`
 ```
 account.GenerateTokens(level=1, days=30) # Generate Register Token
-account.HWIDReset(username="Username) # Reset HWID
+account.HWIDReset(username="Username") # Reset HWID
 
 account.UpdatePlan(option="expiration", username="Username", data=30) # Add 30 days to expiration
 account.UpdatePlan(option="ban", username="Username") # Ban User
